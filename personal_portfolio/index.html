@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5210c27139.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo1.png" class="logo" alt="">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fax" onclick="closemenu()"></i>
+
+        </ul>
+        <i class="fa-solid fa-bars fax" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <!-- <p>UI/UX Designer</p> -->
+        <h1>Hi, <br> I'm  <span>Aakash</span>  <br>Yadav from India</h1>
+    </div>
+</div>
+    </div>
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/photo.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    I’m a passionate Appian Developer, Vue.js, and Python Developer with 2 years of experience creating innovative and efficient solutions. My expertise includes Appian, Python, SQL, and front-end development, enabling me to build robust and user-friendly applications and certified ML developer.
+
+When I’m not coding, I enjoy playing cricket and traveling, which keep my creativity sharp and problem-solving skills fresh. I love exploring the latest tech trends and diving into good books, always striving to learn and grow. </p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links " onclick="opentab('experince')">
+                                Experience</p>
+                            <p class="tab-links " onclick="opentab('eduction')">Eduction</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-End Development</span><br>Designing application using vue js</li>
+                                <li><span>Appian Developer</span><br>Designing application using Appian</li>
+                                <li><span>ML & Python Development</span><br> use algorithms and statistical models for predictions based on data </li>
+
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="experince">
+                            <ul>
+                                <li><span>1/2024 - 6/2024</span><br>Vue js Developer at IntimeTec</li>
+                                <li><span>7/2022-7/2023</span><br>Appian Developer at Appcino Technology</li>
+                                <li><span>1/2022-04/2022</span><br>Python & ML Developer at segnotech </li>
+
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="eduction">
+                            <ul>
+                                <li><span>Arya Institute Of Enginnering </span><br>B.TECH IN COMPUTER SCIENCE</li>
+                                <li><span>Rainbow School</span><br>SECONDARY EDUCATION</li>
+                                <li><span>Rainbow School</span><br>HIGH SCHOOL EDUCATION </li>
+
+                            </ul>
+                         </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Vue Developer</h2>
+                <p>We provide custom app development, fast-loading SPAs, and intuitive UI/UX design. Our services include reusable components. We specialize in eCommerce solutions, developing feature-rich websites and SPAs. Our Firebase integration covers Firestore, Authentication, Cloud Functions, and Hosting. We ensure top performance with migration, upgradation, and optimization. Quality is guaranteed through testing with Jest, Mocha, and Cypress. Ongoing maintenance and support are also available.
+                                    </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Appian Developer</h2>
+<p>We design processes to fit your business needs, create process models, and develop CDTs for data mapping. Our services include building reusable user interfaces, defining constants and business rules, setting up query rules, and managing data stores, tables, and relationships. We integrate with external systems using APIs, connectors, and custom integrations, and create user-accessible sites. We also generate detailed reports with drillable charts and gauges for comprehensive data visualization.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>ML  Developer</h2>
+                <p>We create advanced predictive models to forecast heart disease risk, leveraging key factors like age, chest pain type, cholesterol, and maximum heart rate. Our approach includes meticulous data cleaning and analysis, removing outliers, and using visualizations to uncover insights. We deploy cutting-edge classification algorithms, including Logistic Regression, KNN, SVM, Decision Tree, and Random Forest, with KNN achieving up to 87.91% accuracy. By fine-tuning hyperparameters, we ensure optimal model performance and precise predictions.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- potfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Zwiggy App</h3>
+                    <p>Create efficient food delivery apps Zwiggy.</p>
+
+                    <a href="https://zwiggyfd.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>Build a game tic Tac toe .</p>
+
+                    <a href="https://aakashtictactoe.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo to talent people around te world. Download it from play store.</p>
+
+                    <a href=" https://ecommercewebsite-10ac9.web.app/login"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                   </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+ </div>
+
+ <!-- contact -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aakashyadav112000@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9116582228</p>
+                <div class="social-icons">
+                    <a href="https://github.com/aakash9112000"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aakashydv/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="./images/_Aakash_ Resume_.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>hi aakash here <i class="fa-solid fa-heart"></i></p>
+
+    </div>
+  </div>
+    <script src="./script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzg42TSnFuL17XWfNCLdFCySQPUI-dL-EzfTuViAml4p5NIgvIPJ6F5KAYtZHI99fpU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
